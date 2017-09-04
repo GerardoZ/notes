@@ -1,0 +1,39 @@
+//Colors
+$main-color: #5b4681;
+$secondary-color: white;
+$grey: #dddddd;
+$ligth-grey: #f9f9f9;
+$dark-grey: #777777;
+
+//Spacing
+$space: 1.4rem;
+$wrapper-width: 50rem;
+
+//Font sizes
+$base-font-size: 1.6rem;
+$large-font-size: 1.8rem;
+
+//Form inputs
+$input-border: $grey;
+$input-spacing: 1rem;
+
+//Boxed view
+$boxed-view-overlay-bg: $grey;
+$boxed-view-bg: $secondary-color;
+
+//Button
+$button-bg: $main-color;
+$button-color: $secondary-color;
+$button-pill-color: $main-color;
+$button-secondary-bg: $ligth-grey;
+$button-secondary-color: $dark-grey;
+$button-secondary-border-color: $grey;
+
+//Title bar
+$title-bar-bg: $main-color;
+$title-bar-color: $secondary-color;
+
+//Item
+$item-bg: $ligth-grey;
+$item-border: darken($item-bg,8%);
+$item-text-color: $dark-grey;

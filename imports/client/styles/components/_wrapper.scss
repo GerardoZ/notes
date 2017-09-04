@@ -1,0 +1,14 @@
+.wrapper{
+  margin: 0 auto;
+  padding: $space;
+  width: $wrapper-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper__content{
+  margin: 0 auto;
+  padding: $space;
+  width: $wrapper-width;
+}
