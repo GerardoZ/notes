@@ -13,7 +13,7 @@ if(Meteor.isClient){
             const updatedAt = moment().valueOf();
             const wrapper = mount(<NoteListItem note={{title, updatedAt}}/>);
             expect(wrapper.find('h5').text()).toBe(title);
-            expect(wrapper.find('p').text()).toBe('14/09/2017');
+            expect(wrapper.find('p').text()).toBe(moment().format('DD/MM/YYYY'));
         });
 
         it('Should set default title if no title set', function(){
