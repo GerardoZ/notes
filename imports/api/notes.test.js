@@ -35,7 +35,7 @@ if(Meteor.isServer){
                 Meteor.server.method_handlers['notes.insert']();
             }).toThrow();
         });
-        
+
         it('Should remove note', function(){
             Meteor.server.method_handlers['notes.remove'].apply({userId: noteOne.userId}, [noteOne._id]);
             expect(Notes.findOne({_id: noteOne._id})).toNotExist();
@@ -67,7 +67,7 @@ if(Meteor.isServer){
         });
 
         it('Should throw error if extra updates', function(){
-            const title = 'This is an updated title';            
+            const title = 'This is an updated title';
             expect(() => {
                 Meteor.server.method_handlers['notes.update'].apply({
                     userId: noteOne.userId
