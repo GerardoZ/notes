@@ -72,6 +72,6 @@ export default createContainer(() => {
         selectedNoteId,
         note: Notes.findOne(selectedNoteId),
         call: Meteor.call,
-        browserHistory: browserHistory
+        browserHistory
     };
 }, Editor);
