@@ -7,7 +7,7 @@ export default class Dashboard extends Component {
     render() {
         return (
             <div>
-                <PrivateHeader title="Dashboard"/>
+                <PrivateHeader title="Notes"/>
                 <div className="wrapper__content">
                     <div className="wrapper__sidebar">
                         <NoteList/>

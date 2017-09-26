@@ -7,3 +7,24 @@
 .title-bar__title{
   margin: 0;
 }
+
+.title_bar__content {
+    align-items: center;
+    display: flex;
+  height: $title-bar-height;
+  justify-content: space-between;
+  max-width: $wrapper-width;
+  margin: 0 auto;
+  padding: $space;
+}
+
+.title_bar__nav-toggle{
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+
+    @include desktop{
+        display: none;
+    }
+
+}
