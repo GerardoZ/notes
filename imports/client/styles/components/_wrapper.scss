@@ -1,3 +1,4 @@
+
 .wrapper{
   margin: 0 auto;
   padding: $space;
@@ -12,16 +13,30 @@
     height: $wrapper-height;
     margin: 0 auto;
     max-width: $wrapper-width;
-    padding: $large-space $space;
+
+    @include desktop{
+        padding: $large-space $space;
+    }
 }
 .wrapper__sidebar{
     width: $wrapper-sidebar-width;
-    display: flex;
+    //display: flex;
+    display:none;
     padding-right: $large-space;
+
+    @include desktop{
+        display: flex;
+    }
 }
 
+
+
 .wrapper__main{
-    width: $wrapper-main-width;
     display: flex;
+    width: 100%;
+    @include desktop{
+        width: $wrapper-main-width;
+
+    }
 
 }
