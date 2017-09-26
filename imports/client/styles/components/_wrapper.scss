@@ -12,11 +12,12 @@
     height: $wrapper-height;
     margin: 0 auto;
     max-width: $wrapper-width;
-    padding: $space;
+    padding: $large-space $space;
 }
 .wrapper__sidebar{
     width: $wrapper-sidebar-width;
     display: flex;
+    padding-right: $large-space;
 }
 
 .wrapper__main{
