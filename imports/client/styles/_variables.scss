@@ -1,13 +1,17 @@
 //Colors
-$main-color: #5b4681;
+$main-color: #397ab1;
 $secondary-color: white;
 $grey: #dddddd;
 $ligth-grey: #f9f9f9;
 $dark-grey: #777777;
 
+//body
+$body-background-color: #fafafa;
+$body-default-color: #333333;
+
 //Spacing
 $space: 1.4rem;
-$wrapper-width: 50rem;
+$wrapper-width: 100rem;
 
 //Font sizes
 $base-font-size: 1.6rem;
@@ -20,6 +24,7 @@ $input-spacing: 1rem;
 //Boxed view
 $boxed-view-overlay-bg: $grey;
 $boxed-view-bg: $secondary-color;
+$boxed-view-border-color: $grey;
 
 //Button
 $button-bg: $main-color;
@@ -32,8 +37,15 @@ $button-secondary-border-color: $grey;
 //Title bar
 $title-bar-bg: $main-color;
 $title-bar-color: $secondary-color;
+$title-bar-height: 6rem;
 
 //Item
 $item-bg: $ligth-grey;
 $item-border: darken($item-bg,8%);
 $item-text-color: $dark-grey;
+
+
+//Wrapper
+$wrapper-sidebar-width: 30rem;
+$wrapper-main-width: calc(#{$wrapper-width} - #{$wrapper-sidebar-width});
+$wrapper-height: calc(100vh - #{$title-bar-height})

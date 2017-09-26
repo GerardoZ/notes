@@ -8,7 +8,19 @@
 }
 
 .wrapper__content{
-  margin: 0 auto;
-  padding: $space;
-  width: $wrapper-width;
+    display: flex;
+    height: $wrapper-height;
+    margin: 0 auto;
+    max-width: $wrapper-width;
+    padding: $space;
+}
+.wrapper__sidebar{
+    width: $wrapper-sidebar-width;
+    display: flex;
+}
+
+.wrapper__main{
+    width: $wrapper-main-width;
+    display: flex;
+
 }

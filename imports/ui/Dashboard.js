@@ -8,9 +8,13 @@ export default class Dashboard extends Component {
         return (
             <div>
                 <PrivateHeader title="Dashboard"/>
-                <div className="wrapper">
-                    <NoteList/>
-                    <Editor/>
+                <div className="wrapper__content">
+                    <div className="wrapper__sidebar">
+                        <NoteList/>
+                    </div>
+                    <div className="wrapper__main">
+                        <Editor/>
+                    </div>
                 </div>
             </div>
         )
